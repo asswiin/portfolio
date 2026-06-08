@@ -17,6 +17,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#" onclick="openCVModal(); return false;">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -93,34 +95,177 @@
 
     <section id="education" class="section-padding">
         <div class="container">
-            <h3 class="section-title">Education & Certs</h3>
-            <div class="edu-item">
-                <div class="edu-info">
-                    <h4>Master of Computer Applications (MCA)</h4>
-                    <p>APJ Abdul Kalam Technological University | 2024 - 2026</p>
+            <h3 class="section-title">Education & Certifications</h3>
+            <div class="edu-timeline">
+                <div class="edu-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h4>Master of Computer Applications (MCA)</h4>
+                        <p class="edu-institute">APJ Abdul Kalam Technological University</p>
+                        <p class="edu-date">2024 - 2026</p>
+                    </div>
                 </div>
-            </div>
-            <div class="edu-item">
-                <div class="edu-info">
-                    <h4>Python Full Stack Development</h4>
-                    <p>Luminar Technolab | Certification</p>
+                <div class="edu-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h4>Bachelor of Computer Applications (BCA)</h4>
+                        <p class="edu-institute">Sree Keralavarma College</p>
+                        <p class="edu-date">2020 - 2023</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-icon">📜</div>
+                    <div class="edu-info">
+                        <h4>Python Full Stack Development Certification</h4>
+                        <p class="edu-institute">Luminar Technolab</p>
+                        <p class="edu-date">Completed</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-icon">📜</div>
+                    <div class="edu-info">
+                        <h4>MERN Stack & React Development Workshop</h4>
+                        <p class="edu-institute">ICT Academy</p>
+                        <p class="edu-date">Completed</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="about" class="section-padding grey-bg">
+        <div class="container">
+            <h3 class="section-title">About Me</h3>
+            <div class="about-content">
+                <p class="about-text">I'm a detail-oriented Full Stack Developer currently pursuing my Master of Computer Applications (MCA) at APJ Abdul Kalam Technological University. With a strong foundation in MERN Stack (MongoDB, Express.js, React, Node.js) and React Native, I specialize in building scalable web applications and mobile solutions.</p>
+                <p class="about-text">I have proven experience in integrating RESTful APIs, managing databases, and solving complex technical problems. My certifications include Python Full Stack Development and hands-on workshops in MERN Stack development.</p>
+                <div class="cta-buttons">
+                    <button class="btn primary" onclick="openCVModal()">📄 View Full CV</button>
+                    <a href="mailto:aswinhareesh1991@gmail.com" class="btn secondary">📧 Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="cv-modal">
+        <div class="cv-modal-content">
+            <span class="close-btn" onclick="closeCVModal()">&times;</span>
+            <div class="cv-header">
+                <h1>ASWIN HAREESH</h1>
+                <p class="cv-title">FULL STACK DEVELOPER</p>
+                <div class="cv-contact">
+                    <span>📱 7902960258</span>
+                    <span>📧 aswinhareesh1991@gmail.com</span>
+                    <span>💼 <a href="https://www.linkedin.com/in/aswin-hareesh">LinkedIn</a></span>
+                    <span>🐙 <a href="https://github.com/asswiin">GitHub</a></span>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2 class="cv-section-title">PROFESSIONAL SUMMARY</h2>
+                <p>Detail-oriented Full Stack Developer and current Master of Computer Applications (MCA) student with a strong foundation in MERN Stack (MongoDB, Express.js, React, Node.js) and mobile app development using React Native. Proven ability to build scalable web applications, integrate RESTful APIs, and manage databases. Certified in Python Full Stack Development with a passion for solving complex technical problems and building user-centric digital solutions.</p>
+            </div>
+
+            <div class="cv-section">
+                <h2 class="cv-section-title">TECHNICAL SKILLS</h2>
+                <ul class="cv-skills-list">
+                    <li><strong>Languages:</strong> JavaScript (ES6+), Python, HTML5, CSS3, SQL</li>
+                    <li><strong>Frontend:</strong> React.js, React Native</li>
+                    <li><strong>Backend:</strong> Node.js, Express.js, REST APIs</li>
+                    <li><strong>Databases:</strong> MongoDB, MySQL</li>
+                    <li><strong>Tools & Platforms:</strong> Git, GitHub, Postman, IoT Integration</li>
+                </ul>
+            </div>
+
+            <div class="cv-section">
+                <h2 class="cv-section-title">PRACTICAL PROJECTS</h2>
+                <div class="cv-project">
+                    <h3>Fleet Vehicle Tracking System</h3>
+                    <p class="cv-tech"><em>React Native, Node.js, Express.js, MongoDB</em></p>
+                    <ul>
+                        <li>Developed a real-time vehicle tracking and trip management system using React Native, Node.js, and MongoDB.</li>
+                        <li>Implemented live location updates and secure data storage for trip logs and user authentication.</li>
+                    </ul>
+                </div>
+                <div class="cv-project">
+                    <h3>IoT Based Gas Leakage Detection System</h3>
+                    <p class="cv-tech"><em>MERN Stack (MongoDB, Express, React, Node.js)</em></p>
+                    <ul>
+                        <li>Built a monitoring system using the MERN Stack to detect hazardous gas leaks and send real-time alerts.</li>
+                        <li>Designed a responsive dashboard to visualize sensor data and manage system status notifications.</li>
+                    </ul>
+                </div>
+                <div class="cv-project">
+                    <h3>V-Build: Real Estate & Construction Platform</h3>
+                    <p class="cv-tech"><em>PHP, MySQL, HTML, CSS, JavaScript</em></p>
+                    <ul>
+                        <li>Engineered a platform for land purchases and architect connections using PHP, MySQL, and JavaScript.</li>
+                        <li>Managed the end-to-end development on a WAMP Server, focusing on database search and UI design.</li>
+                    </ul>
+                </div>
+                <div class="cv-project">
+                    <h3>E-Commerce Web Application</h3>
+                    <p class="cv-tech"><em>Python, HTML, CSS</em></p>
+                    <ul>
+                        <li>Developed a functional online shopping platform for product management and user interaction using Python.</li>
+                        <li>Created a clean interface with HTML and CSS to support core e-commerce features and product browsing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2 class="cv-section-title">EDUCATION</h2>
+                <div class="cv-edu-item">
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p>APJ Abdul Kalam Technological University | 2024 – 2026</p>
+                </div>
+                <div class="cv-edu-item">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p>Sree Keralavarma College | 2020 – 2023</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2 class="cv-section-title">CERTIFICATIONS</h2>
+                <ul class="cv-certs-list">
+                    <li>Python Full Stack Development Certification | Luminar Technolab</li>
+                    <li>MERN Stack & React Development Workshop | ICT Academy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <footer id="contact">
         <div class="container text-center">
             <h2>Let's build something together.</h2>
             <p>Currently open to internship and junior developer opportunities.</p>
             <div class="footer-links">
-                <a href="mailto:aswinhareesh1991@gmail.com">Email</a>
-                <a href="https://linkedin.com/in/aswin-hareesh">LinkedIn</a>
-                <a href="https://github.com/asswiin">GitHub</a>
+                <a href="mailto:aswinhareesh1991@gmail.com">📧 Email</a>
+                <a href="https://linkedin.com/in/aswin-hareesh">💼 LinkedIn</a>
+                <a href="https://github.com/asswiin">🐙 GitHub</a>
             </div>
             <p class="copyright">&copy; 2024 Aswin Hareesh. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openCVModal() {
+            document.getElementById('cvModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCVModal() {
+            document.getElementById('cvModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('cvModal');
+            if (event.target === modal) {
+                closeCVModal();
+            }
+        }
+    </script>
 
 </body>
 </html>
