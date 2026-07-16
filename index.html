@@ -325,6 +325,7 @@
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <input type="hidden" id="replyTo" name="_replyto">
                         </div>
                     </div>
 
@@ -400,6 +401,21 @@
         }
 
         // Mobile nav toggle
+        const contactForm = document.querySelector('.contact-form');
+        const emailInput = document.getElementById('email');
+        const replyToInput = document.getElementById('replyTo');
+
+        function syncReplyTo() {
+            if (replyToInput && emailInput) {
+                replyToInput.value = emailInput.value.trim();
+            }
+        }
+
+        if (emailInput && replyToInput && contactForm) {
+            emailInput.addEventListener('input', syncReplyTo);
+            contactForm.addEventListener('submit', syncReplyTo);
+        }
+
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
         navToggle.addEventListener('click', function () {
